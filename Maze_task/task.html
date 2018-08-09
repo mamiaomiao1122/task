@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task</title>
+     <style>
+       body{
+            margin: 0;
+            padding: 0;
+        }
+        .module{
+            margin:20px auto auto 200px;
+        }
+        .result{
+            width:500px;
+            height:300px;
+            background-color: #fff;
+            border:2px solid pink;
+        }
+        #smallWall{
+            width:30px;
+            height:30px;
+            background-color: #000;
+        }
+        #smallRoad{
+            width:30px;
+            height:30px;
+            background-color: PINK;
+        } 
+         
+    </style>
+</head>
+<body>
+    <div class="module">
+    <div>请输入网格道路的大小<input type="text" id="road_size" name="road_size" title="Please enter M*N" value="3*3"></div><br>
+    <div>请输入连通网格的规则<textarea rows="8" cols="20" id="road_connect" name="road_connect" title="please enter..." value=" 0,1 0,2;0,0 1,0;0,1 1,1;0,2 1,2;1,0 1,1;1,1 1,2;1,1 2,1;1,2 2,2;2,0 2,1"> 0,1 0,2;0,0 1,0;0,1 1,1;0,2 1,2;1,0 1,1;1,1 1,2;1,1 2,1;1,2 2,2;2,0 2,1</textarea></div>
+    <input type="button" name="btnClick" id="btnClick" value="点击" onclick="show()">
+    <div class="result" id="result"></div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="task.js"></script>
+
+</body>
+</html>
